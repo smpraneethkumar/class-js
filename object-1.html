@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        const car2 = {
+            brand : "IQOO",
+            colour : "Gray",
+            ram : "12GB",
+            sytem : "andirod 14",
+            fingreprint : "yes" ,
+            price : 14000
+        }
+        console.log(car2);
+        
+        
+        console.log(car2.hasOwnProperty("brand"));
+
+        console.log(Object.values(car2));
+
+        console.log(Object.keys(car2));
+        
+        console.log(Object.entries(car2));
+
+        const a = {
+            brand : "apple"
+        }
+        console.log(a);
+        
+        const b = Object.create(a)
+        console.log(b);
+        console.log(a);
+
+        const y = {
+            fruit : "banana"
+        }
+        console.log(y);
+        
+        const x = Object.assign(y)
+
+        console.log(x);
+
+        const phone = {
+            brand : "samsung",
+            model : "S altar",
+            colou : "white",
+            price : 100000
+        }
+        console.log(phone);
+        let = Object.freeze(phone);
+        phone.brand
+        phone.colou
+        console.log(phone);
+
+
+        const moblie = {
+            brand: "nokia",
+        
+            keypad :"yes",
+            warranty : "12month",
+            price :1200
+        }
+    
+        Object.seal(moblie)
+        moblie.keypad;
+        moblie.touch;
+        console.log(moblie);
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    </script>
+</body>
+</html>

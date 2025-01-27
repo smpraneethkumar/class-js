@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container{
+            border: 5px solid black;
+            padding: 15px;
+            width: 300px;
+        }
+
+        ul li {
+           border: 1px solid ; 
+           padding: 10px;
+           width: 100px;
+           background-color: cornflowerblue;
+        }
+
+        .imags{
+            position: relative;
+            border: 3px solid ;
+            width: 250px;
+            height: 550px;
+        }
+        .imags img{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 200px;
+            height: 200px;
+        }
+        .sum-btn{
+            padding: 50px;
+            color: blue;
+            background-color: bisque;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <button id="clickme">click Me</button>
+    </div>
+    <button id="ques-3">Question-3</button>
+
+    <div class="imags">
+        <img  class="image-2"src="./product-1-1.jpg" alt="">
+    <img src="./product-1-2.jpg" alt="">
+
+
+   
+    </div>
+    <input type="text" class="inputs">
+
+    <form>
+        <button class="sum-btn" type="submit">Submit</button>
+    </form>
+    <script>
+    
+    //1) Difference between Events bubbling and event capturing? write an example
+        const click = document.getElementById("clickme")
+        click.addEventListener("click", ()=>{
+            console.log("button is clicked");
+            
+        })
+
+        // const div = document.getElementsByClassName("container")
+        // div.addEventListener("click", ()=>{
+        //     console.log("the div is clicked");
+            
+        // })
+
+        const divs = document.getElementById("container");
+        divs.addEventListener("click", ()=>{
+            console.log("The div is clicked");
+            
+        })
+
+        //3) create a button that scounts the number of times it has been clicked. display teh counnter in a <span> elements.
+        const btn = document.getElementById("ques-3");
+        btn.addEventListener("click", ()=>{
+            console.log("The button is clicked");
+            
+        })
+        //6)change the background coolor of a <div> when it's double.clicked
+        let imge2 = document.getElementsByClassName("image-2")
+        let imge = document.getElementsByClassName("imags")
+        imge.addEventListener("double-click",()=>{
+                console.log(`image2`);
+                
+        })
+
+        //7)When the user hovers over a <div>, display some hidden taxt. Hide the text when teh user stops hoverings.
+        const hoverhandler = document.getElementsByClassName("inputs")
+        hoverhandler.addEventListener("mouseover",hoverhandler()=>{
+            console.log("Pleace enter the input text");
+            
+        }
+        )
+
+        //14)onces the user clickes a button disabel it and display a message that the button has been clicked
+        const forms =document.querySelector("form")
+        forms.addEventListener("submit",(event)=>{
+            event.preventDefault()
+        })
+
+        let muffuf = () =>
+        </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        
+        
+        // comparetwoObj(x,y)
+
+// let x = {
+//             a: 1,
+//             b: 2
+//         }
+//         let y = {
+//             a :1,
+//             bb: 20
+//             c :34
+//         }
+//         const comparetwoObj = (obj1,obj2) =>{
+//             let isTure = true;
+//             for (let i= 0; i<obj1.length; i++){
+//                 if (obj1 === obj2){
+//                     isTure = true
+//                 } else {
+//                     isTure = false
+//                 }
+                
+//             }
+//             console.log(isTure);
+            
+
+        const x = {a:1}
+        const y = {}
+// console.log(obj1 == obj2); // false
+
+ const compareTwoObj = (obj1, obj2) => {
+    const obj1Key = Object.keys(obj1) // ['a', 'b']
+    console.log(obj1Key);
+    // let isTrue = true
+    // for(let i = 0; i < obj1Key.length; i++){
+    //   if(obj1[obj1Key[i]] === obj2[obj1Key[i]]){  // obj1["a"] = 1
+    //     isTrue = true
+    //   } else {
+    //     isTrue = false
+    //   }
+    // }
+    // console.log(isTrue);
+ }
+compareTwoObj(x, y)
+    </script>
+</body>
+</html>
