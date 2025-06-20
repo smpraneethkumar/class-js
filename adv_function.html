@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // let [r,y,b,g] =["red","yellow", "blue","green"]
+// // console.log(a);
+
+// console.log();
+
+
+// handler(2,3)
+// function handler(a,b){
+//     console.log(a *b);
+    
+// }
+
+// (function(num1,num2){
+//     console.log(num1 * num2);
+    
+// })(2,3)
+
+
+// let employee = {
+//     eid: "E102",
+//     ename: "Jack",
+//     eaddress: "New York",
+//     salary: 50000
+// }
+// console.log("=========Deep Copy========");
+// let newEmployee = JSON.parse(JSON.stringify(employee));
+// console.log("Employee=> ", employee);
+// console.log("New Employee=> ", newEmployee);
+// console.log("---------After modification---------");
+// newEmployee.ename = "Beck";
+// newEmployee.salary = 70000;
+// console.log("Employee=> ", employee);
+// console.log("New Employee=> ", newEmployee);
+
+function upperText(str){
+   const [first, ...other] =str.split(" ")
+   return [first.toUpperCase(),...other].join(" ")
+// console.log(first);
+
+}
+
+function trsText(str,fn){
+    console.log(`input text= ${str}`);
+    console.log(`converted string: ${fn(str)}`);
+    
+    
+}
+trsText("javascript is best", upperText)
+
+
+    </script>
+</body>
+</html>
