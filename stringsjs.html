@@ -28,13 +28,22 @@
         console.log(word.substring(3,14));
 
         console.log(word.replace("UI Development AIT",'Java Fullstack Development'));
-
+        
         console.log(word.toLowerCase());
 
         console.log(word.toUpperCase());
         
         
-        
+        const str1 = "$*Hel234lo"
+    let newStr = ""
+
+    for(let i = 0; i < str1.length; i++){
+      const x = str1.charCodeAt(i)
+      if(x >= 65 && x <= 90 || x >= 97 && x <= 122){
+        newStr += str1[i]
+      }
+    }
+    console.log(newStr);
         
         
 
